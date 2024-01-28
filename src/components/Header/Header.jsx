@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <img
         src={logo}
-        alt="A logo showing money green bag with money"
+        alt="This is a logo showing a green bag with money"
         className="header__logo"
       />
       <h1 className="header__title">Investment Calculator</h1>
