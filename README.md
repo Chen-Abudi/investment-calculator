@@ -1,6 +1,6 @@
 # 🧮 📈 investment-calculator
 
-**Developed by \***Grace Chen Abudi**\*** 👩🏽‍💻
+**Developed by `Grace Chen Abudi`** 👩🏽‍💻
 
 ## 📣 Overview:
 
