@@ -74,7 +74,7 @@
 
 // export default UserInput;
 
-import { useState } from "react";
+// import { useState } from "react";
 import "./UserInput.css";
 
 function InputField({ label, value, onChange }) {
@@ -92,22 +92,22 @@ function InputField({ label, value, onChange }) {
   );
 }
 
-function UserInput() {
-  const [userInput, setUserInput] = useState({
-    initialInvestment: 10000,
-    annualInvestment: 1200,
-    expectedReturn: 6,
-    duration: 10,
-  });
+function UserInput({ onChange, userInput }) {
+  // const [userInput, setUserInput] = useState({
+  //   initialInvestment: 10000,
+  //   annualInvestment: 1200,
+  //   expectedReturn: 6,
+  //   duration: 10,
+  // });
 
-  function handleInputChange(inputIdentifier, newValue) {
-    setUserInput((prevUserInput) => {
-      return {
-        ...prevUserInput,
-        [inputIdentifier]: newValue,
-      };
-    });
-  }
+  // function handleInputChange(inputIdentifier, newValue) {
+  //   setUserInput((prevUserInput) => {
+  //     return {
+  //       ...prevUserInput,
+  //       [inputIdentifier]: newValue,
+  //     };
+  //   });
+  // }
 
   return (
     <section className="user-input">
@@ -116,14 +116,14 @@ function UserInput() {
           label="Initial Investment"
           value={userInput.initialInvestment}
           onChange={({ target: { value } }) =>
-            handleInputChange("initialInvestment", value)
+            onChange("initialInvestment", value)
           }
         />
         <InputField
           label="Annual Investment"
           value={userInput.annualInvestment}
           onChange={({ target: { value } }) =>
-            handleInputChange("annualInvestment", value)
+            onChange("annualInvestment", value)
           }
         />
       </div>
@@ -132,15 +132,13 @@ function UserInput() {
           label="Expected Return"
           value={userInput.expectedReturn}
           onChange={({ target: { value } }) =>
-            handleInputChange("expectedReturn", value)
+            onChange("expectedReturn", value)
           }
         />
         <InputField
           label="Duration"
           value={userInput.duration}
-          onChange={({ target: { value } }) =>
-            handleInputChange("duration", value)
-          }
+          onChange={({ target: { value } }) => onChange("duration", value)}
         />
       </div>
     </section>
