@@ -23,7 +23,7 @@ The Investment Calculator Project is a comprehensive financial tool designed to 
 
 ---
 
-# ** ✨ How to Get Started**:
+# **✨ How to Get Started**:
 
 **Clone**
 
