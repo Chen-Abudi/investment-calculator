@@ -23,21 +23,47 @@ The Investment Calculator Project is a comprehensive financial tool designed to 
 
 ---
 
-# **✨ How to Get Started**:
+# ✨ How to Get Started
 
-**Clone**
+## Clone Project:
 
-**`$ git clone https://github.com/Chen-Abudi/investment-calculator.git`**
+```bash
 
-**Install**
+git clone https://github.com/Chen-Abudi/investment-calculator.git
 
-**`$ cd investment-calculator`**
+```
 
-**`npm install`** or in short **`$ npm i`**
+## Enter the project directory:
 
-**Launch**
+```bash
 
-**`$ npm run dev`**
+cd investment-calculator
+
+```
+
+## Install the Dependencies:
+
+```bash
+
+npm install
+
+```
+
+or in short
+
+```bash
+
+npm i
+
+```
+
+## Launch:
+
+```bash
+
+npm run dev
+
+```
 
 ---
 
